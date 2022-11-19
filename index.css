@@ -9,9 +9,7 @@ html,body{
 body{background-color: black;
 
     overflow-x: hidden;
-    background:url("./images/homebg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
     font-family: 'Caveat', cursive;
     font-family: 'Courgette', cursive;
     font-family: 'Lobster', cursive;
@@ -20,8 +18,20 @@ body{background-color: black;
 .navbar{
     position: sticky;
 }
+.rows{
+  display:flex;
+  flex-wrap: wrap;
+}
+.column{
+  margin-left:10rem;
+  margin-top:10rem;
+}
 #home{
 height: 100vh;
+background:url("./images/background.jpg");
+   
+background-repeat: no-repeat;
+background-size: cover;
 }
 .hover:hover{
   color:#0bf61b;
@@ -30,7 +40,7 @@ height: 100vh;
     height:100vh;
 
 }
-.row1{
+/*.row1{
     position:absolute;
     top:12rem;
     left:10rem;
@@ -43,7 +53,7 @@ height: 100vh;
     width:20rem;
     height:20rem;
     display:inline-block;
-}
+}*/
 .coloured{
     border:1px solid white;
     position:relative;
@@ -73,15 +83,12 @@ font-family: 'Patrick Hand', cursive;
 .nav-font{
     color:rgb(249, 249, 249);
     font-size: 1.5rem;
-    
 }
 .navbar-brand{
     font-size: 2rem;
-
 }
 .row2{
     position:absolute;
-
     left:10rem;
 }
 .about{
@@ -91,7 +98,7 @@ font-family: 'Patrick Hand', cursive;
   height:100px;
 }
 @media (max-width:1023px) {
-    .row1{
+    /*.row1{
         position:absolute;
         top:9rem;
         left:3rem;
@@ -105,15 +112,24 @@ font-family: 'Patrick Hand', cursive;
         width:16rem;
         height:16rem;
         display:inline-block;
-    }
+    }*/
     .coloured{
         border:1px solid red;
-        position:absolute;
+        /*position:absolute;
         top:2rem;
-        left:2rem;
+        left:2rem;*/
+    
         width:16rem;
         height:16rem;
         display:inline-block;
+    }
+    .rows{
+      display:flex;
+      flex-wrap: wrap;
+    }
+    .column{
+      margin-left:1rem;
+      margin-top:3rem;
     }
     .heading{
         margin-top:24rem;
