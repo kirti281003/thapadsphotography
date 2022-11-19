@@ -24,8 +24,9 @@ body{background-color: black;
 }
 .column{
   margin-left:10rem;
-  margin-top:10rem;
+  margin-top:3rem;
 }
+
 #home{
 height: 100vh;
 background:url("./images/background.jpg");
@@ -55,13 +56,15 @@ background-size: cover;
     display:inline-block;
 }*/
 .coloured{
-    border:1px solid white;
+  
     position:relative;
-    top:5rem;
+    top:2rem;
     left:-2rem;
     width:20rem;
     height:20rem;
     display:inline-block;
+    background-image: url("./images/simmi.jpeg");
+    background-size: cover;
 }
 .heading{
     margin-top:6rem;
@@ -91,6 +94,9 @@ font-family: 'Patrick Hand', cursive;
     position:absolute;
     left:10rem;
 }
+.picphn{
+ display:none;
+}
 .about{
     margin-top:8rem;
 }
@@ -98,6 +104,15 @@ font-family: 'Patrick Hand', cursive;
   height:100px;
 }
 @media (max-width:1023px) {
+  .picphn{
+    height:11rem;
+    display:block;
+    position: absolute;
+    bottom:0;
+  }
+  .toggle-color{
+    color:white;
+  }
     /*.row1{
         position:absolute;
         top:9rem;
@@ -114,13 +129,11 @@ font-family: 'Patrick Hand', cursive;
         display:inline-block;
     }*/
     .coloured{
-        border:1px solid red;
-        /*position:absolute;
-        top:2rem;
-        left:2rem;*/
-    
-        width:16rem;
-        height:16rem;
+        position:absolute;
+        top:7rem;
+        left:5rem;
+        width:14rem;
+        height:14rem;
         display:inline-block;
     }
     .rows{
@@ -129,7 +142,7 @@ font-family: 'Patrick Hand', cursive;
     }
     .column{
       margin-left:1rem;
-      margin-top:3rem;
+      margin-top:-4rem;
     }
     .heading{
         margin-top:24rem;
