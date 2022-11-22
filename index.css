@@ -6,189 +6,57 @@
 html,body{
     overflow-x: hidden;
 }
-body{background-color: black;
+*{
+ 
 
-    overflow-x: hidden;
-
-    font-family: 'Caveat', cursive;
-    font-family: 'Courgette', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Patrick Hand', cursive;
 }
-.navbar{
-    position: sticky;
+.nav-logo{
+  height:3rem;
 }
-.rows{
+#home{
+  height:100vh;
+  border:2px solid black;
   display:flex;
   flex-wrap: wrap;
-}
-.column{
-  margin-left:10rem;
-  margin-top:3rem;
-}
-
-#home{
-height: 100vh;
-background:url("./images/background.jpg");
-   
-background-repeat: no-repeat;
-background-size: cover;
-}
-.hover:hover{
-  color:#0bf61b;
-}
-#about{
-    height:100vh;
-
-}
-/*.row1{
-    position:absolute;
-    top:12rem;
-    left:10rem;
-}
-.grayscale{
-    border:1px solid white;
-    position:absolute;
-    top:2rem;
-    left:2rem;
-    width:20rem;
-    height:20rem;
-    display:inline-block;
-}*/
-.coloured{
-  
-    position:relative;
-    top:2rem;
-    left:-2rem;
-    width:20rem;
-    height:20rem;
-    display:inline-block;
-    background-image: url("./images/simmi.jpeg");
-    background-size: cover;
-}
-.heading{
-    margin-top:6rem;
-    font-family: sans-serif;
-    font-weight: bolder;
-    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-p{color:white;
-    font-weight:500;
-    font-size: 1.7rem;
-    font-family: 'Bebas Neue', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Patrick Hand', cursive;
-}
-.nav-font{
-    color:rgb(249, 249, 249);
-    font-size: 1.5rem;
-}
-.navbar-brand{
-    font-size: 2rem;
-}
-.row2{
-    position:absolute;
-    left:10rem;
+  background:url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .picphn{
- display:none;
+  display:none;
+ }
+.column{
+  margin-top:12rem;
+  margin-left:6rem;
 }
-.about{
-    margin-top:8rem;
+.card{
+  width:20rem;
+  height:20rem;
+  border:2px solid white;
+  background: url("./images/simmi.jpeg");
+  background-size: cover;
 }
-.navbar-brand img{
-  height:100px;
+.homedesc{
+ 
+  height:20rem;
+  margin-top:17rem;
 }
-@media (max-width:1023px) {
-  .picphn{
-    height:11rem;
-    display:block;
-    position: absolute;
-    bottom:0;
-  }
-  .toggle-color{
-    color:white;
-  }
-    /*.row1{
-        position:absolute;
-        top:9rem;
-        left:3rem;
-        overflow-x: hidden;
-    }
-    .grayscale{
-        border:1px solid green;
-        position:absolute;
-        top:4rem;
-        left:0rem;
-        width:16rem;
-        height:16rem;
-        display:inline-block;
-    }*/
-    .coloured{
-        position:absolute;
-        top:7rem;
-        left:5rem;
-        width:14rem;
-        height:14rem;
-        display:inline-block;
-    }
-    .rows{
-      display:flex;
-      flex-wrap: wrap;
-    }
-    .column{
-      margin-left:1rem;
-      margin-top:-4rem;
-    }
-    .heading{
-        margin-top:24rem;
-        font-family: sans-serif;
-        font-weight: bolder;
-        background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .centerhead{
-        display: block;
-        text-align: center;
-        font-size: 3rem;
-        color:white;
-        margin-top:6rem;
-      }
-      .navbar-brand{
-       position: absolute;
-       top:0;
-       right:0;
-      }
-      .navbar-brand img{
-        height:70px;
-      }
-    
-}
-@media (max-width:375px)
-{  .centerhead{
-  display: block;
-  text-align: center;
-  font-size: 3rem;
-  color:white;
-  margin-top:14rem;
-}
-
+.heading
+{
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*about*/
 #gallery{  margin-top:6rem;
     min-height: 100vh;
+    background-color: black;
 }
 .galleryitem{
     display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   overflow-y: hidden;
 }
 .box {
@@ -201,6 +69,7 @@ font-family: 'Patrick Hand', cursive;
     margin: 80px;
     background: #060c21;
     transition: 0.5s;
+    overflow: hidden;
   }
   
   .box:hover {
@@ -215,6 +84,7 @@ font-family: 'Patrick Hand', cursive;
     height:100%;
     padding: 10px;
     box-sizing: border-box;
+    overflow: hidden;
   }
   
   .box .imgBx img {
@@ -277,6 +147,8 @@ font-family: 'Patrick Hand', cursive;
     text-align: center;
     opacity: 0;
     transition: 0.5s;
+    overflow: hidden;
+   
   }
   
   .box:hover .content {
@@ -302,9 +174,29 @@ font-family: 'Patrick Hand', cursive;
     text-align: center;
     font-size: 3rem;
     color:white;
+    margin-top: 0;
   }
   .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+  @media(max-width:819px)
+  {
+    .picphn{
+        height:11rem;
+        display:block;
+        position: absolute;
+        bottom:0;
+      }
+    .column{
+        margin-top:5rem;
+        margin-left:1rem;
+    }
+    .homedesc{
+   
+        height:auto;
+        margin-top:-8rem;
+    }
+
   }

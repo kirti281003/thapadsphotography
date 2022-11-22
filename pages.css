@@ -1,6 +1,9 @@
 body{
     background-color: black;
 }
+.nav-logo{
+    height:3rem;
+}
 .image_container img{
     height: 200px;
     margin:2rem;
